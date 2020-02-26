@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <header id="header " class="t-a-c container--fluid">
+        <div class="header__wrapper row">
+          <div
+            class="hamburger  col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xl-1  d-inline-b"
+          >
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+
+          <div
+            class="nav--menu col-xs-0  col-sm-0 col-md-5 col-lg-5  col-xl-5  d-inline-b"
+          >
+            <ul class="nav--list">
+              <li class="nav--item">
+                <a href="" class="nav--link">Matches</a>
+              </li>
+              <li class="nav--item">
+                <a href="" class="nav--link">Heroes</a>
+              </li>
+              <li class="nav--item">
+                <a href="" class="nav--link">Players</a>
+              </li>
+            </ul>
+          </div>
+          <form class="search col-xs-8 col-sm-8 col-md-3 col-lg-3 col-xl-3  ">
+            <input
+              type="text"
+              class="search__field"
+              placeholder="Search by player name"
+              autofocus
+            />
+            <button class="btn search__btn t-a-c">
+              <svg class="search__icon ">
+                <use
+                  href="./assets/search-icon.svg#icon-magnifying-glass"
+                ></use>
+              </svg>
+            </button>
+          </form>
+          <div
+            class="logo  col-xs-2 col-sm-2 col-md-2 col-lg-2  col-xl-2  d-inline-b"
+          >
+            <img src="./assets/dota.png" alt="Logo" class="logo__d2" />
+          </div>
+        </div>
+      </header>
+      <nav class="t-a-c">
+        <div class="nav__wrapper">
+          <div class="nav__side__title">
+            <h2 class="nav__title">&lt;MayHem&bsol;&gt;</h2>
+          </div>
+          <ul class="nav__side__menu">
+            <li class="nav__side__item">
+              <a href="" class="nav__side__link">Heroes</a>
+            </li>
+            <li class="nav__side__item">
+              <a href="" class="nav__side__link">Players</a>
+            </li>
+            <li class="nav__side__item">
+              <a href="" class="nav__side__link">Pro Players</a>
+            </li>
+            <li class="nav__side__item">
+              <a href="" class="nav__side__link">Matches</a>
+            </li>
+          </ul>
+          <div class="nav__side__footer t-a-c">
+            <img src="./assets/dota.png" alt="" class="logo__d2" />
+            <p>Copyright &copy; 2020.</p>
+            <span class="span--color">Powered by </span
+            ><a
+              href="https://www.opendota.com/api-keys"
+              class="api-link"
+              target="_blank"
+              >Open Dota</a
+            >
+          </div>
+        </div>
+      </nav>
+      <main id="main">
+        <div id="main__wrapper">
+          <!--Loader-->
+          <!--
+  <div class="loader">
+    <svg>
+          <use href="img/icons.svg#icon-cw"></use>
+    </svg>
+  </div>
+          -->
+          <!--Heroes table-->
+          <!--
+   <div class="hero--pb">
+            <h2 class="hero--pb__title">
+              Heroes in Professional Matches
+            </h2>
+            <table>
+              <thead>
+                <tr class="border-bottom">
+                  <th>
+                    <div class="hero--pb__th">
+                      Hero
+                    </div>
+                  </th>
+                  <th>
+                    <div class="hero--pb__th">
+                      Pro Pick &#37;
+                    </div>
+                  </th>
+                  <th>
+                    <div class="hero--pb__th">
+                      Pro Ban &#37;
+                    </div>
+                  </th>
+                  <th>
+                    <div class="hero--pb__th">
+                      Pro Win &#37;
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="hero">
+                      <img
+                        src="./assets/dota.png"
+                        alt="Hero Name"
+                        class="hero__icon"
+                      />
+                      <a href="" class="hero__name">Anti-Mage </a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">99%</div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                  <td>
+                    <div class="hero__pb">
+                      99%
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>>
+
+          -->
+
+          <!--Hero-detail -->
+          <!--
+  <div class="hero-detail">
+            <div class="hero-detail__bg"></div>
+            <div class="container--fluid">
+              <div class="row">
+                <div
+                  class="hero-detail__info col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                >
+                  <div
+                    style="background: url(https://api.opendota.com/apps/dota2/images/heroes/antimage_full.png?);background-size: cover;background-position: center;background-repeat: no-repeat;"
+                    class="hero-detail__img"
+                  ></div>
+                  <div class="hero-detail__nr d-i-b">
+                    <div class="hero-detail__name">Anti-Mage</div>
+                    <span class="hero-detail__att">melee -</span>
+                    <span class="hero-detail__role">carry, escape, nuker </span>
+                  </div>
+                </div>
+                <div
+                  class="hero-detail__stat col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                >
+                  <div class="hero-detail__stat__wrapper">
+                    <span class="hero-detail__stat--str-icon"></span>
+                    <span class="hero-detail__stat--str">23 + 3</span>
+                  </div>
+                  <div class="hero-detail__stat__wrapper">
+                    <span class="hero-detail__stat--ag-icon"></span>
+                    <span class="hero-detail__stat--ag">23 + 3</span>
+                  </div>
+                  <div class="hero-detail__stat__wrapper">
+                    <span class="hero-detail__stat--int-icon"></span>
+                    <span class="hero-detail__stat--int">23 + 3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+  <div class="detail-table">
+  <div class="container--fluid">
+    <div class="row">
+      <div
+        class="detail-row col-xs-12 col-sm-12 col-md-6 col-lg-3  col-xl-3"
+      >
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+      </div>
+      <div
+        class="detail-row col-xs-12 col-sm-12 col-md-6 col-lg-3  col-xl-3"
+      >
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+      </div>
+      <div
+        class="detail-row col-xs-12 col-sm-12 col-md-6 col-lg-3  col-xl-3"
+      >
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+      </div>
+      <div
+        class="detail-row col-xs-12 col-sm-12 col-md-6 col-lg-3  col-xl-3"
+      >
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+        <div class="detail-row__item">
+          <span class="detail-row__name">turn rate</span>
+          <span class="detail-row__value">33</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+             <div class="hero--rank">
+            <h2 class="hero--rank__title">
+              Rankings
+            </h2>
+            <table>
+              <thead>
+                <tr class="border-bottom">
+                  <th>
+                    <div class="hero--rank__th">
+                      Rank
+                    </div>
+                  </th>
+                  <th>
+                    <div class="hero--rank__th">
+                      Name
+                    </div>
+                  </th>
+                  <th>
+                    <div class="hero--rank__th">
+                      Score
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="boder-bottom hero--pb__info">
+                  <td>
+                    <div class="rank">
+                      1st
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rank__name">
+                      <div class="person-avatar"></div>
+                      <a href="" class="person-name">Funkefal</a>
+                      <div class="account-id">6969696969</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rank--score">
+                      8500
+                    </div>
+                  </td>
+                </tr>
+               
+               
+               
+              
+              </tbody>
+            </table>
+          </div>
+
+          -->
+
+          <!--
+     <div class="show-detail t-a-c">
+            <button class="show-detail__btn">Show detail</button>
+          </div>
+          -->
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="footer__wrapper">
+          <p class="copy-right">
+            Copyright&copy; 2020 &nbsp; &lt;MayHem&bsol;&gt; &nbsp;
+          </p>
+          <span class="span--color"
+            >Powered by
+            <a href="https://www.opendota.com/api-keys" class="api-link"
+              >Open Dota</a
+            ></span
+          >
+        </div>
+      </footer>
+    </div>
+  <script type="text/javascript" src="js/hero.js"></script></body>
+</html>
