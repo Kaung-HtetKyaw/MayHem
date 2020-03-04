@@ -1575,7 +1575,7 @@ footer .footer__wrapper {
 }
 @media (min-width: 0px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media (min-width: 600px) {
